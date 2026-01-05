@@ -1,0 +1,45 @@
+<section class="Espacos">
+    <h2>Entre em contato</h2>
+    <p>Adoraríamos ouvir de você! Seja para planejar o casamento dos seus sonhos ou um evento especial, nossa equipe
+        está aqui para ajudar em cada etapa do processo.</p>
+</section>
+<section class="Contato">
+    <div class="MaisInfo">
+        <div class="Local">
+            <h3>Informações sobre o local</h3>
+            <ul>
+                <li> Sitio Verde Flor, Estrada da Luz, 123</li>
+                <li> +55 (22) 99999-9999</li>
+                <li> contato&#64;sitioverdeflor.com.br</li>
+            </ul>
+
+
+        </div>
+        <div class="Mensagem">
+            <h3>Envie-nos uma mensagem</h3>
+
+            <form [formGroup]="form" (submit)="Enviar()" class="Formulario">
+
+                <label for="nome">Nome
+                </label>
+                <input id="nome" type="text" formControlName="nome" placeholder="Seu nome Completo">
+                <label for="email">email
+                </label>
+                <input id="email" type="text" formControlName="email" placeholder="seuEmail@exemplo.com">
+                <label for="telefone">telefone
+                </label>
+                <input id="telefone" type="text" formControlName="telefone" placeholder="+55 (XX) XXXXX-XXXX">
+                <label for="mensagem">mensagem
+                </label>
+                <textarea id="mensagem"  formControlName="mensagem" placeholder="Conte-nos sobre o seu evento, as datas desejadas ou quaisquer pedidos especiais..."> </textarea>
+                
+                   <button class="btn">Enviar mensagem</button>
+                
+                
+            </form>
+             
+        </div>
+       
+    </div>
+
+</section>
