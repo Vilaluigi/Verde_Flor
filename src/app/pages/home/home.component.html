@@ -1,0 +1,56 @@
+<Section class="hero">
+   <div class="overlay"></div>
+    <div class="hero-content">
+        <h1 style="font-weight: bold; font-size: 60px;margin: 0;">O cenário perfeito <br>para momentos inesquecíveis</h1>
+        <p style="font-size: 20px;">Local exclusivo no campo para casamentos e eventos</p>
+    </div>
+    <div class="btn-hero">
+        <button class="btn btn-primary">Verificar Disponibilidade</button>
+        <button class="btn btn-outline">Ver Galeria</button>
+    </div>
+</Section>
+<section class="espacos">
+  <div class="espacos-container">
+    <h2>Nossos Espaços</h2>
+
+    <div class="espacos-grid">
+      @for (item of arrayCards; track item.id) {
+        <article class="space-card">
+          <img [src]="item.image" [alt]="item.imgAlt" loading="lazy">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+<section class="container-divisao">
+  <h2>“Apenas um evento por dia — exclusividade total.”</h2>
+</section>
+<section class="journey-container">
+  <h2 class="journey-title">Sua Jornada Conosco</h2>
+
+  <div class="steps-wrapper">
+    <div class="connector-line"></div>
+
+    <ol class="steps-list">
+      @for (item of arrayJornada; track item.id) {
+        <li class="step-item">
+          <div class="icon-circle">
+            <img [src]="item.image" [alt]="item.imgAlt" loading="lazy">
+          </div>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+        </li>
+      }
+    </ol>
+  </div>
+</section>
+<section class="container-depoimentos">
+<h2> O que dizem nossos clientes</h2>
+</section>
+<section class="container-Reserva">
+<h2>Pronto para planejar o evento dos seus sonhos?</h2>
+<button class="btn btn-reserva">Solicite uma reserva</button>
+</section>
+

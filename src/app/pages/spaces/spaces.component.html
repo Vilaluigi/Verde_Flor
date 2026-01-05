@@ -1,0 +1,10 @@
+<section class="Espacos">
+    <h2>Nossos Espaços Encantadores</h2>
+    <p>Descubra o cenário perfeito para sua ocasião especial, desde jardins exuberantes a salões elegantes.</p>
+
+    <div class="NossosEspacos">
+        @for ( item of spaces; track item.id){
+        <app-gallery-card [space]="item" />
+        }
+    </div>
+</section>

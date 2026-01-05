@@ -1,0 +1,23 @@
+<article class="card">
+  <img
+    [src]="space.image"
+    [alt]="space.title"
+    loading="lazy"
+    width="299"
+    height="256"
+  />
+
+  <div class="content">
+    <h3>{{ space.title }}</h3>
+    @if (space.title === 'Estacionamento'){
+      <span class="capacity"> até {{ space.capacity }} veículos</span>
+    }@else if(space.title ==='Cozinha'){
+       <span class="capacity"></span>
+    }
+    @else {
+       <span class="capacity"> até {{ space.capacity }} convidados</span>
+    }
+    <p>{{ space.description }}</p>
+    <button class="btn" routerLink="/contato">Marque uma visita</button>
+  </div>
+</article>

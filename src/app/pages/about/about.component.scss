@@ -1,0 +1,296 @@
+.Sobre {
+  position: relative;
+  min-height: 70vh;
+  background-image: url('/Sobre.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  flex-direction: column;
+
+
+}
+
+.Historia {
+  background-color: #ffffff;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+
+
+  h2 {
+    color: #82A470FF;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700;
+
+  }
+}
+
+.container-divisao {
+  background-color: #F2F5FDFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px;
+  font-family: 'Cormorant Garamond', serif; /* ou outra se preferir */
+
+
+}
+
+.Momentos {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #fff;
+
+
+  h2 {
+    color: #82A470FF;
+    font-size: 36px;
+    line-height: 40px; 
+    font-weight: 400; 
+
+  }
+
+  .Info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    p {
+      font-family: 'Outfit';
+      max-width: 448px;
+      text-align: left;
+      font-size: 18px;
+      line-height: 29px;
+      font-weight: 400;
+      color: #171A1FFF; /* neutral-900 */
+
+    }
+  }
+}
+
+
+
+.espacos {
+  background-color: #ffffff;
+  padding: 100px 20px;
+}
+
+.espacos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.espacos h2 {
+  color: #171A1FFF;
+  margin-bottom: 60px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+
+}
+
+.espacos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.space-card {
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 40px 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.space-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.space-card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+  opacity: 0.6;
+  fill: #82A470FF; 
+}
+
+.space-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #171A1FFF;
+}
+
+.space-card p {
+  font-size: 14px;
+  color: #171A1FFF;
+  line-height: 1.6;
+}
+
+.NossaEquipe {
+  background-color: #ffffff;
+  padding: 100px 20px;
+}
+
+.NossaEquipe-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.NossaEquipe h2 {
+  font-size: 36px;
+  color: #82A470FF;
+  margin-bottom: 60px;
+  font-weight: 500;
+  line-height: 40px;
+  font-weight: 400;
+
+}
+
+
+
+
+.journey-container {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.journey-title {
+  margin-bottom: 60px;
+  font-size: 36px;
+  color: #82A470FF;
+  margin-bottom: 60px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.steps-wrapper {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.steps-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 2; /* Fica à frente da linha */
+}
+
+.step-item {
+  flex: 1;
+  max-width: 280px;
+}
+
+/* O Círculo Azulado do Ícone */
+.icon-circle {
+  width: 150px;
+  height: 150px;
+  background-color: #f4f7fb; /* Cor de fundo suave da imagem */
+  border-radius: 50%;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Garante que o fundo do círculo cubra a linha atrás dele */
+  border: 4px solid #fff; 
+}
+
+.icon-circle img {
+  width: 150px;
+  height: 150px;
+  filter: brightness(0.2); /* Deixa o ícone escuro como na imagem */
+}
+
+.step-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.step-item p {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+  .steps-list {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .connector-line {
+    display: none; /* Esconde a linha horizontal no mobile */
+  }
+}
+
+
+.footer-sobre {
+  background-color: #ffffff;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  h2 {
+  font-size: 30px; 
+  line-height: 36px; 
+  font-weight: 400; 
+  color: #171A1FFF; /* neutral-900 */
+  margin: 0;
+  }
+  p{
+  font-family: Outfit; /* Body */
+  font-size: 18px; 
+  line-height: 28px; 
+  font-weight: 400; 
+  color: #171A1FFF; /* neutral-900 */
+  }
+}
+
+
+
+.btn {
+  padding: 10px 30px;
+  border-radius: 999px; 
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+  border: none;
+  font-family: 'Outfit'; 
+  line-height: 28px; 
+  color: #FFFFFFFF; /* white */
+  background: #82A470FF; 
+}
+
+/* Hover */
+.btn:hover {
+  color: #FFFFFFFF; /* white */
+  background: #526B45FF; 
+}
+/* Pressed */
+.btn:hover:active {
+  color: #FFFFFFFF; /* white */
+  background: #3F5235FF; 
+}
+/* Disabled */
+.btn:disabled {
+  opacity: 0.4; 
+}

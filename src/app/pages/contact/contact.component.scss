@@ -1,0 +1,218 @@
+.Espacos {
+    background-color: #ffffff;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+
+    h2 {
+        margin: 0;
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: 700;
+        color: #171A1FFF;
+
+
+    }
+
+    p {
+        text-align: center;
+        width: 768px;
+        font-family: 'Outfit';
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #565D6DFF;
+
+    }
+}
+
+.Contato {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MaisInfo {
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+}
+
+.Local {
+    border-width: 1px;
+    border-color: #DEE1E6FF;
+    border-style: solid;
+    border-radius: 16px;
+    padding: 20px 20px;
+    width: 432px;
+    height: 311px;
+
+    h3 {
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 600;
+        color: #171A1FFF;
+        margin: 0;
+        margin-bottom: 30px;
+
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        font-family: 'Outfit';
+        font-size: 18px;
+        line-height: 29px;
+        font-weight: 400;
+        color: #171A1FFF;
+
+    }
+}
+
+.Mensagem {
+    border-width: 1px;
+    border-color: #DEE1E6FF;
+    border-style: solid;
+    border-radius: 16px;
+    padding: 20px 20px;
+
+    h3 {
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 600;
+        color: #171A1FFF;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+}
+
+.Formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="text"] {
+    width: 368px;
+    height: 53px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-family: Outfit;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    background: #FFFFFFFF;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: #DEE1E6FF;
+    border-style: solid;
+    outline: none;
+}
+
+textarea {
+    width: 368px;
+    height: 122px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-family: 'Outfit';
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #565D6DFF;
+    background: #FFFFFFFF;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: #DEE1E6FF;
+    border-style: solid;
+}
+
+label {
+    font-family: 'Outfit';
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.btn {
+    //padding: 10px 30px;
+    padding: 0 12px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2;
+    border: none;
+    font-family: 'Outfit';
+    line-height: 28px;
+    color: #FFFFFFFF;
+    background: #82A470FF;
+    width: 100%;
+    font-weight: 600;
+
+}
+
+/* Hover */
+.btn:hover {
+    color: #FFFFFFFF;
+    /* white */
+    background: #526B45FF;
+}
+
+/* Pressed */
+.btn:hover:active {
+    color: #FFFFFFFF;
+    /* white */
+    background: #3F5235FF;
+}
+
+/* Disabled */
+.btn:disabled {
+    opacity: 0.4;
+}
+
+.Conecte-se {
+    margin-top: 13rem;
+
+    h3 {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 600;
+        color: #171A1FFF;
+
+    }
+
+    img {
+        fill: #E9EEFCFF;
+    }
+}
+
+.Mapa {
+    background-color: #ffffff;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        font-size: 36px;
+        line-height: 45px;
+        font-weight: 700;
+        color: #171A1FFF;
+ 
+    }
+}

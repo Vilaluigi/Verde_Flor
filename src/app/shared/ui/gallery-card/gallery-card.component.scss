@@ -3,6 +3,9 @@
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.2s ease;
+  border-width: 1px;
+  border-color: #DEE1E6FF;
+   border-style: solid;
 
   &:hover {
     transform: translateY(-4px);
@@ -17,6 +20,12 @@
   .content{
     display: flex;
     flex-direction: column;
+    padding: 20px 20px ;
+
+    .btn {
+      align-self: center;
+      margin-top: 12px;
+    }
   }
 
   .content h3{
@@ -35,7 +44,7 @@
   }
   .content p{
   font-family: 'Outfit'; /* Body */
-  font-size: 16px; 
+  font-size: 16px;
   line-height: 24px; 
   font-weight: 400; 
   color: #171A1FFF; /* neutral-900 */
@@ -55,5 +64,17 @@
   font-weight: 500; 
   color: #82A470FF; 
   background: #FFFFFFFF;
-  padding: 14px 32px;
+  padding: 10px 32px;
+  width: 260px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #82A470FF; 
+  background: #FFFFFFFF; /* white */
+}
+/* Pressed */
+.btn:hover:active {
+  color: #82A470FF; 
+  background: #FFFFFFFF; /* white */
 }

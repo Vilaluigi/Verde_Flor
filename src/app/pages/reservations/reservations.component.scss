@@ -1,0 +1,250 @@
+.calendar-card {
+    padding: 16px;
+}
+
+.Contato {
+    background-color: #ffffff;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MaisInfo {
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+}
+
+.Local {
+    border-width: 1px;
+    border-color: #DEE1E6FF;
+    border-style: solid;
+    border-radius: 16px;
+    padding: 20px 20px;
+    width: 432px;
+    //height: 311px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h3 {
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 600;
+        color: #171A1FFF;
+        margin: 0;
+        margin-top: 40px;
+
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        font-family: 'Outfit';
+        font-size: 18px;
+        line-height: 29px;
+        font-weight: 400;
+        color: #171A1FFF;
+
+    }
+}
+
+.Mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 1px;
+    border-color: #DEE1E6FF;
+    border-style: solid;
+    border-radius: 16px;
+    padding: 20px 20px;
+    width: 520px;
+    //height: 892px;
+    text-align: center;
+
+    h3 {
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 600;
+        color: #171A1FFF;
+        margin: 0;
+        margin-top: 40px;
+
+    }
+
+    p {
+        font-family: Outfit;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #565D6DFF;
+
+    }
+}
+
+.Formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="text"] {
+    width: 406px;
+    height: 45px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-family: Outfit;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    background: #FFFFFFFF;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: #DEE1E6FF;
+    border-style: solid;
+    outline: none;
+}
+
+input[type="number"] {
+    width: 406px;
+    height: 45px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-family: Outfit;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    background: #FFFFFFFF;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: #DEE1E6FF;
+    border-style: solid;
+    outline: none;
+}
+
+textarea {
+    width: 406px;
+    height: 112px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-family: Outfit;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #565D6DFF;
+    background: #FFFFFFFF;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: #DEE1E6FF;
+    border-style: solid;
+}
+
+label {
+    font-family: 'Outfit';
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    text-align: justify
+}
+
+
+.btn {
+    padding: 10px 30px;
+    padding: 0 12px;
+    height: 48px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2;
+    border: none;
+    font-family: 'Outfit';
+    line-height: 28px;
+    color: #FFFFFFFF;
+    background: #82A470FF;
+    width: 100%;
+    font-weight: 600;
+
+}
+
+/* Hover */
+.btn:hover {
+    color: #FFFFFFFF;
+    /* white */
+    background: #526B45FF;
+}
+
+/* Pressed */
+.btn:hover:active {
+    color: #FFFFFFFF;
+    /* white */
+    background: #3F5235FF;
+}
+
+/* Disabled */
+.btn:disabled {
+    opacity: 0.4;
+}
+
+
+.custom-calendar {
+    width: 320px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 0 1px #e5e7eb;
+    padding: 12px;
+}
+
+/* Cabeçalho (October 2025 + setas) */
+.custom-calendar .mat-calendar-header {
+    padding-bottom: 8px;
+}
+
+.custom-calendar .mat-calendar-period-button {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Dias da semana (Su, Mo, Tu...) */
+.custom-calendar .mat-calendar-table-header th {
+    color: #6b7280;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/* Células dos dias */
+.custom-calendar .mat-calendar-body-cell-content {
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Dia selecionado */
+.custom-calendar .mat-calendar-body-selected .mat-calendar-body-cell-content {
+    background-color: #f3f4f6;
+    color: #111827;
+}
+
+/* Hover */
+.custom-calendar .mat-calendar-body-cell-content:hover {
+    background-color: #e5e7eb;
+}
+
+/* Remove destaque exagerado do "hoje" */
+.custom-calendar .mat-calendar-body-today:not(.mat-calendar-body-selected) .mat-calendar-body-cell-content {
+    border: none;
+}
+
+.mat-mdc-card{
+    background-color: white;
+    box-shadow: none;
+}

@@ -1,0 +1,18 @@
+<section class="Espacos">
+    <h2>Nossa linda galeria</h2>
+    <p>Descubra os momentos inesquecíveis capturados no Sítio Verde Flor, que mostram a elegância e o romantismo do
+        nosso espaço único.</p>
+    <div class="Categorias">
+        @for (item of categorias; track $index) {
+        <button class="btn" [ngClass]=" item === ValorCategoria() ? 'active':'button'"
+            (click)="MudarCategoria(item)">{{item}}</button>
+        }
+    </div>
+    <div class="Grid">
+        @for (item of spaces; track item.id) {
+        <img [src]="item.image" [alt]="item.title" loading="lazy" />
+
+        }
+    </div>
+
+</section>

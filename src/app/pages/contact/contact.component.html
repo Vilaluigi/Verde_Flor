@@ -6,19 +6,24 @@
 <section class="Contato">
     <div class="MaisInfo">
         <div class="Local">
-            <h3>Informações sobre o local</h3>
-            <ul>
-                <li> Sitio Verde Flor, Estrada da Luz, 123</li>
-                <li> +55 (22) 99999-9999</li>
-                <li> contato&#64;sitioverdeflor.com.br</li>
-            </ul>
+            <div>
+                <h3>Informações sobre o local</h3>
+                <ul>
+                    <li> Sitio Verde Flor, Estrada da Luz, 123</li>
+                    <li> +55 (22) 99999-9999</li>
+                    <li> contato&#64;sitioverdeflor.com.br</li>
+                </ul>
+            </div>
+            <div class="Conecte-se">
+                <h3>Conecte-se conosco</h3>
+                <img src="/Instagram.svg" alt="Instagram" loading="lazy" width="32px;" height="32px">
 
-
+            </div>
         </div>
         <div class="Mensagem">
             <h3>Envie-nos uma mensagem</h3>
 
-            <form [formGroup]="form" (submit)="Enviar()" class="Formulario">
+            <form [formGroup]="form" (ngSubmit)="Enviar()" class="Formulario">
 
                 <label for="nome">Nome
                 </label>
@@ -31,15 +36,24 @@
                 <input id="telefone" type="text" formControlName="telefone" placeholder="+55 (XX) XXXXX-XXXX">
                 <label for="mensagem">mensagem
                 </label>
-                <textarea id="mensagem"  formControlName="mensagem" placeholder="Conte-nos sobre o seu evento, as datas desejadas ou quaisquer pedidos especiais..."> </textarea>
-                
-                   <button class="btn">Enviar mensagem</button>
-                
-                
+                <textarea id="mensagem" formControlName="mensagem" placeholder="Conte-nos sobre o seu evento, as datas desejadas ou quaisquer pedidos especiais"> </textarea>
+
+                <button class="btn">Enviar mensagem</button>
+
+
             </form>
-             
+
         </div>
-       
+
     </div>
 
+</section>
+
+<section class="Mapa">
+    <h3>Encontre-nos no mapa</h3>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.094320501!2d-47.63079682397279!3d-15.533073585071493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a6fb418903d0b%3A0x71d6e2dd660e28cf!2sS%C3%ADtio%20Verde%20Flor%20-%20Espa%C3%A7o%20%26%20Eventos!5e0!3m2!1spt-BR!2sbr!4v1766441079480!5m2!1spt-BR!2sbr"
+        style="border:0; width: 62%; height: 450px;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>

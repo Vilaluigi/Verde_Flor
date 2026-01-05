@@ -1,0 +1,48 @@
+<section class="Contato">
+    <div class="MaisInfo">
+        <div class="Local">
+            <h3>Verifique a disponibilidade</h3>
+            <p>Selecione a data desejada para o evento para verificar a disponibilidade do Sítio Verde Flor. As datas indisponíveis estão marcadas.</p>
+            <mat-card class="calendar-card">
+                <mat-calendar  [selected]="selected()" (selectedChange)="onSelect($event)" class="custom-calendar">
+                </mat-calendar>
+            </mat-card>
+        </div>
+        <div class="Mensagem">
+            <h3>Detalhes da sua reserva</h3>
+            <p>Preencha o formulário abaixo com os detalhes do seu evento. Aguardamos ansiosamente a oportunidade de
+                celebrar seu dia especial.</p>
+
+            <form [formGroup]="FomContact" (ngSubmit)="Enviar()" class="Formulario">
+                <label for="nome">Nome Completo
+                </label>
+                <input id="nome" type="text" formControlName="nome" placeholder="Seu nome Completo">
+                <label for="email">email
+                </label>
+                <input id="email" type="text" formControlName="email" placeholder="seuEmail@exemplo.com">
+                <label for="telefone">telefone
+                </label>
+                <input id="telefone" type="text" formControlName="telefone" placeholder="+55 (XX) XXXXX-XXXX">
+                <label for="data">Data do Evento</label>
+                <mat-form-field appearance="outline" class="full-width">
+                    <input matInput [matDatepicker]="picker" formControlName="data">
+                     <mat-label>Escolha uma data do evento</mat-label>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+                <label for="totalPessoas">Quantidade de pessoas estimadas</label>
+                <input id="totalPessoas" type="number" formControlName="totalPessoas" placeholder="150">
+                <label for="mensagem">mensagem
+                </label>
+                <textarea id="mensagem" formControlName="mensagem"
+                    placeholder="Conte-nos sobre o seu evento, as datas desejadas ou quaisquer pedidos especiais"></textarea>
+
+                <button class="btn">Enviar solicitação de reserva</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>

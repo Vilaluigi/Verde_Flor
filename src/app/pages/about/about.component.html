@@ -1,0 +1,61 @@
+<Section class="Sobre">
+</Section>
+<section class="Historia">
+    <h2>Nossa História: O Coração do Sítio Verde Flor</h2>
+</section>
+<section class="container-divisao">
+  <h2>“Apenas um evento por dia — exclusividade total.”</h2>
+</section>
+<section class="Momentos">
+    <h2>Criando momentos inesquecíveis para gerações</h2>
+    <div class="momentos Info">
+        <p>O Sítio Verde Flor nasceu do sonho de criar um santuário onde histórias
+            de amor pudessem se desenrolar em uma beleza incomparável.
+            Transmitida por gerações, nossa propriedade familiar foi carinhosamente transformada em um refúgio exclusivo
+            para casamentos
+            e celebrações memoráveis. Cada pedra, cada caminho do jardim e cada viga do nosso salão ecoam um legado de
+            alegria e dedicação.
+            Acreditamos que o verdadeiro luxo reside na privacidade e na atenção personalizada, e é por isso que
+            dedicamos todo o nosso espaço a um único evento por dia. Isso garante que sua ocasião especial receba nossa
+            atenção exclusiva, permitindo-nos elaborar meticulosamente cada detalhe com perfeição. Do momento em que
+            você chega até a partida do seu último convidado, o Sítio Verde Flor é seu, e somente seu.</p>
+
+        <img src="/Sobre.webp" alt="" width="448px" height="336px" style="border-radius: 20px;margin-top: 29px;" loading="lazy">    
+    </div>
+</section>
+<section class="espacos">
+  <div class="espacos-container">
+    <h2>O que nos move</h2>
+
+    <div class="espacos-grid">
+      @for (item of motivos; track item.id) {
+        <article class="space-card">
+          <img [src]="item.image" [alt]="item.title" loading="lazy">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+<section class="journey-container">
+  <h2 class="journey-title">Conheça nossos fundadores</h2>
+  <div class="steps-wrapper">
+    <ol class="steps-list">
+      @for (item of NossosFundadores; track item.id) {
+        <li class="step-item">
+          <div class="icon-circle">
+            <img [src]="item.image" [alt]="item.descricao" loading="lazy">
+          </div>
+          <h3>{{ item.titulo }}</h3>
+          <p>{{ item.descricao }}</p>
+        </li>
+      }
+    </ol>
+  </div>
+</section>
+<section class="footer-sobre">
+  <h2>Vivencie o Sítio Verde Flor em primeira mão</h2>
+  <p>Convidamos você a agendar uma visita personalizada ao nosso espaço deslumbrante e a imaginar o seu dia perfeito conosco.</p>
+  <button class="btn btn-reserva">Agende uma visita</button>
+</section>
